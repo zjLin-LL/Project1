@@ -143,11 +143,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cvImage.cpp" />
     <ClCompile Include="ftpupload.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MShot.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cvImage.h" />
     <ClInclude Include="ftpupload.h" />
+    <ClInclude Include="MShot.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -11,7 +11,9 @@ class ftpup
 public:
 	HINTERNET hint;
 	HINTERNET hftp;
+
 	bool connect(string IP, string uesrname, string key);
 	void disconnect();
+	bool upload(string source, string patternname, string target);
 };
 
