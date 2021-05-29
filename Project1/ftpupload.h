@@ -6,7 +6,7 @@
 #include <iostream>
 using namespace std;
 
-class ftpup
+class ftpupload
 {
 public:
 	HINTERNET hint;

@@ -1,6 +1,6 @@
 #include "ftpupload.h"
 
-bool ftpup::connect(string IP, string uesrname, string key)
+bool ftpupload::connect(string IP, string uesrname, string key)
 {
 	
 
@@ -19,13 +19,13 @@ bool ftpup::connect(string IP, string uesrname, string key)
 	return true;
 }
 
-void ftpup::disconnect()
+void ftpupload::disconnect()
 {
 	InternetCloseHandle(hftp);
 	InternetCloseHandle(hint);
 }
 
-bool ftpup::upload(string sourcepath, string patternname, string target)
+bool ftpupload::upload(string sourcepath, string patternname, string target)
 {
 	if (FtpSetCurrentDirectory(hftp, target.c_str()))
 	{

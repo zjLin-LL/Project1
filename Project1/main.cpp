@@ -17,7 +17,7 @@ string datapath = "D:/data";
 int main()
 {
 	MShot cam;
-	ftpup ftp;
+	ftpupload ftp;
 	if (!(ftp.connect(IP, USERNAME, PASSWORD)))
 	{
 		cout << "Á¬½ÓÊ§°Ü" << endl;
