@@ -11,7 +11,8 @@ string TARGETPATH = "/home/pi/pattern";
 
 string SOURCEPATH = "C:/Users/LLL/Desktop/1.png";
 
-string path = "d:/data";
+string datapath = "D:/data";
+
 
 int main()
 {
@@ -21,10 +22,11 @@ int main()
 	{
 		cout << "Á¬½ÓÊ§°Ü" << endl;
 		system("pause");
+		return 0;
 	}
 
 	ftp.upload(SOURCEPATH,PATTERNNAME,TARGETPATH);
-
+	cam.GrabImage(1, datapath);
 
 
 	ftp.disconnect();
