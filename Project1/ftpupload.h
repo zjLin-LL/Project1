@@ -9,7 +9,9 @@ using namespace std;
 class ftpup
 {
 public:
-	int connect(string IP, string uesrname, string key);
-
+	HINTERNET hint;
+	HINTERNET hftp;
+	bool connect(string IP, string uesrname, string key);
+	void disconnect();
 };
 
