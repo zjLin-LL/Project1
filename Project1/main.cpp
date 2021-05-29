@@ -14,14 +14,16 @@ string SOURCEPATH = "C:/Users/LLL/Desktop/1.png";
 
 int main()
 {
+	MShot cam;
+	string path = "d:/data";
+	cam.GrabImage(1, path);
+
 	ftpup ftp;
 	if (!(ftp.connect(IP, USERNAME, PASSWORD)))
 	{
 		cout << "Á¬½ÓÊ§°Ü" << endl;
 		system("pause");
 	}
-
-
 
 	ftp.upload(SOURCEPATH,PATTERNNAME,TARGETPATH);
 
